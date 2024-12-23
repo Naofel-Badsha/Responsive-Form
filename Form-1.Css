@@ -1,0 +1,209 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+ 
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.container{
+    max-width: 650px;
+    padding: 28px;
+    margin: 0 28px;
+    box-shadow: 5px 5px 7px 7px #579657;
+    border-radius: 5px;
+}
+
+h1{
+    font-size: 25px;
+    font-weight: 600;
+    text-align: left;
+    color: coral;
+    padding-bottom: 8px;
+    text-align: center;
+    border-bottom: 1px solid #32cd32;
+
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+
+.input-box:nth-child(2n){
+    justify-content: end;
+}
+
+.input-box label, .gender-title{
+    width: 95%;
+    color: #117abb;
+    font-weight: 600;
+    margin: 5px 0;
+    letter-spacing: 1px;
+}
+
+.gender-title{
+    font-size: 18px;
+}
+
+.input-box input{
+  height: 40px;
+  width: 95%;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 1px solid #ff004f;
+  outline: none;
+}
+
+.input-box input::placeholder{
+    color: #32cd32;
+    font-style: italic;
+}
+
+.input-box input:focus{
+    border: 1px solid #32cd32; 
+    box-shadow: 5px 0px 10px 0px #117abb; 
+}
+
+.Edication{
+    color: #117abb;
+    font-weight: 600;
+    margin: 5px 0;
+    margin-bottom: 50px;
+}
+
+select{
+    font-size: 14px;
+    font-weight: 600;
+    color: coral;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+ option{
+    font-size: 14px;
+    font-weight: 600;
+    color: #ff004f;
+    cursor: pointer;
+}
+
+.hobby{
+    color: #117abb;
+    font-weight: 600;
+    margin: 5px 0;
+    font-style: normal;
+}
+
+.our-hobbey{
+    color: #ff004f;
+    margin: 5px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.gender-category{
+    color: #ff004f;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: italic;
+    padding: 0 30px 0 5px;
+}
+
+.gender-category label, .gender-category input{
+    cursor: pointer;
+}
+
+.alert p{
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 600;
+    color: #333030;
+    margin: 5px 0;
+    padding: 10px;
+}
+
+.alert a{
+    text-decoration: none;
+    color: coral;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.alert a:hover{
+    text-decoration: underline;
+}
+
+.button-container{
+    margin: 15px 0;
+}
+
+.button-container button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #aa076b,#61045f);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button-container button:hover{
+    background-image: linear-gradient(to right, #61045f,#aa076b);
+    color: #32cd32;
+    letter-spacing: 5px;
+}
+
+@media screen and (max-width:768px) {
+    .container{
+        min-width: 280px;
+    }
+
+    .content{
+        max-height: 380px;
+        overflow: auto;
+    }
+
+    .input-box{
+        margin-bottom: 12px;
+        width: 100%;
+    }
+
+    .input-box:nth-child(2n){
+        justify-content: space-between;
+    }
+
+    .gender-category{
+        display: flex;
+       justify-content: space-between;
+       width: 60%;
+    }
+
+    .hobby{
+        display: block;
+        flex-direction: column;
+        right: 0;
+    }
+}
